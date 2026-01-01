@@ -1,3 +1,17 @@
+/* ================================================
+Table des matières 
+1. Générale
+2. Container 1
+3. Container 2
+4. Container 3
+5. Container 4
+6. Footer
+===================================================*/
+
+
+/* ================================================
+1. Générale + Variable
+===================================================*/
 :root {
     --color1 : rgba(203, 205, 192, 1);
     --color2 : rgba(202, 164, 93, 1);
@@ -25,6 +39,12 @@ main{
     flex-direction: column;
     align-items: center;
 }
+p{
+    text-align: justify;
+}
+/* ================================================
+        Logo de page
+===================================================*/
 .imageLogo{
     width: 30%;
     margin-top: 200px;
@@ -34,6 +54,9 @@ main{
     width: 100%;
     object-fit: cover;
 }
+/* ================================================
+        2. Container 1
+===================================================*/
 .container1{
     width: 100%;
     display: flex;
@@ -41,87 +64,325 @@ main{
     margin-top: 80px;
     perspective: 1000px;
 }
+/* Début containerLeft---------------------------- */
 .container1Left{
     width: 40%;
-    height: 600px;
     transform-style: preserve-3d;
-    border: 2px solid gray;
-
 }
 .container1Face{
     height: 100%;
-    background-color: white;
-    padding: 2%;
+    background-color: rgb(220, 218, 218, 0.2);
     backface-visibility: hidden;
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateZ(2px);
     border-radius: 20px;
+    
+}
+.iconeReseaux{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.fa-brands{
+    color: black;
+}
+.fa-solid{
+    color: black;
+}
+#containerProfil{
+    width: 50%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+#profil{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
 }
 .container1Dos{
     height: 100%;
-    background-color: white;
-    padding: 2%;
+    background-color: rgb(220, 218, 218, 0.2);
     position: absolute;
-    transform: rotateY(180deg);
+    transform: rotateY(180deg) translateZ(2px);
     backface-visibility: hidden;
     border-radius: 20px;
+    padding: 10%;
+    box-sizing: border-box;
+}
+.tranche__left{
+    width: 4px;
+    height: 95%;
+    background-color: rgb(220, 218, 218, 0.2);
+    position: absolute;
+    transform: rotateY(90deg);
+    top: 2.5%;
+    left: 0;
 }
 .container1Left:hover {
-    transition: transform 1s ease;
+    transition: transform 2s ease;
     transform: rotateY(180deg);
 }
+
+/* Début containerRight---------------------------- */
 .container1Right{
-    background-color: bisque;
+    background-color: rgb(220, 218, 218, 0.2);
     width: 40%;
+    padding: 3%;
+    border-radius: 20px;
 }
+
+
+/* ================================================
+        3. Container 2
+===================================================*/
 .container2{
+    margin-top: 100px;
     width: 100%;
     display: flex;
     min-height: 300px;
+    position: relative;
 }
+/* Début containerLeft---------------------------- */
 .container2Left{
-    width: 60%;
+    width: 55%;
     min-height: 300px;
-    background-color: bisque;
+    background-color: rgb(220, 218, 218, 0.6);
     clip-path: polygon(0% 0%, 100% 50%, 100% 100%, 0% 100%);
-    border-radius: 20px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
 }
+.logo__front__back{
+    margin-bottom: 20px;
+}
+.fa-html5{
+    color: coral;
+    margin-bottom: 60px;
+}
+.fa-css3-alt{
+    color: rgb(28, 28, 192);
+    margin-bottom: 40px;
+}
+.fa-js{
+    color: rgb(255, 242, 2);
+    margin-bottom: 20px;
+}
+/* Début containerRight---------------------------- */
 .container2Right{
-    width: 60%;
-    background-color: coral;
+    width: 55%;
+    min-height: 300px;
+    background-color: rgb(220, 218, 218, 0.2);
     clip-path: polygon(0% 50%, 100% 0%, 100% 100%, 0% 100%);
-    border-radius: 20px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    right: 0;
 }
+.fa-node-js{
+    color: green;
+    margin-bottom: 40px;
+}
+.fa-mdb{
+    color: rgb(42, 40, 40);
+    margin-bottom: 60px;
+}
+
+
+/* ================================================
+        4. Container 3
+===================================================*/
 .container3{
     width: 100%;
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
 }
+/* Début containerLeft---------------------------- */
 .container3Left{
     width: 40%;
-    background-color: bisque;
 }
+.container__barre{
+    position: relative;
+    height: 20px;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.1);
+    border-radius: 20px;
+    border: 1px solid gray;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+.competence__html{
+    position: absolute;
+    height: 20px;
+    width: 70%;
+    background-color: coral;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+}
+.competence__css{
+    position: absolute;
+    height: 20px;
+    width: 40%;
+    background-color: rgb(28, 28, 192);
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+}
+.competence__js{
+    position: absolute;
+    height: 20px;
+    width: 5%;
+    background-color: rgb(255, 242, 2);
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+}
+/* Début containerRight---------------------------- */
 .container3Right{
     width: 40%;
-    background-color: bisque;
 }
+.competence__nodejs{
+    position: absolute;
+    height: 20px;
+    width: 35%;
+    background-color: green;
+    border-radius: 20px;
+    top: 0;
+    right: 0;
+}
+.competence__mongodb{
+    position: absolute;
+    height: 20px;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.733);
+    border-radius: 20px;
+    top: 0;
+    right: 0;
+}
+/* ================================================
+        5. Container 4
+===================================================*/
 .container4{
+    min-height: 500px;
     width: 100%;
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
+    margin-bottom: 100px;
+    perspective: 1000px;
 }
+/* Début containerLeft---------------------------- */
 .container4Left{
+    height: 100%;
     width: 40%;
-    background-color: bisque;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 2s ease;
+}
+.face__container4Left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    background-color: rgb(220, 218, 218, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5%;
+    box-sizing: border-box;
+    border-radius: 20px;
+
+}
+.dos__container4Left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background-color: rgb(220, 218, 218, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5%;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+.container4Left:hover{
+    transform: rotateY(180deg);
+}
+/* Début containerRight---------------------------- */
+.container4Right{
+    height: 100%;
+    width: 40%;
 }
 .container4Right{
+    height: 100%;
     width: 40%;
-    background-color: bisque;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 2s ease;
 }
+.face__container4Right{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    background-color: rgb(220, 218, 218, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5%;
+    box-sizing: border-box;
+    border-radius: 20px;
+
+}
+.dos__container4Right{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background-color: rgb(220, 218, 218, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5%;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+.container4Right:hover{
+    transform: rotateY(180deg);
+}
+
+
+/* ================================================
+        6. Footer
+===================================================*/
 footer{
     width: 100%;
-    height: 80px;
+    height: 120px;
     display: flex;
     justify-content: space-around;
+    background-color: rgb(220, 218, 218, 0.2);
 }
