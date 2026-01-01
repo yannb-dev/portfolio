@@ -24,6 +24,7 @@ Table des matières
     margin: 0;
     padding: 0;
     font-family: "Noto Sans Mono", serif;
+    color: var(--color6);
 }
 body{
     height: 100vh;
@@ -31,6 +32,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: aliceblue;
 }
 main{
     max-width: 1200px;
@@ -71,7 +73,7 @@ p{
 }
 .container1Face{
     height: 100%;
-    background-color: rgb(220, 218, 218, 0.2);
+    background: linear-gradient(-20deg, rgba(11, 118, 11, 0.1), rgba(11, 118, 11, 0.4));
     backface-visibility: hidden;
     position: absolute;
     display: flex;
@@ -80,6 +82,7 @@ p{
     justify-content: space-around;
     transform: translateZ(2px);
     border-radius: 20px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
     
 }
 .iconeReseaux{
@@ -105,13 +108,14 @@ p{
 }
 .container1Dos{
     height: 100%;
-    background-color: rgb(220, 218, 218, 0.2);
+    background: linear-gradient(-20deg, rgba(11, 118, 11, 0.1), rgba(11, 118, 11, 0.4));
     position: absolute;
     transform: rotateY(180deg) translateZ(2px);
     backface-visibility: hidden;
     border-radius: 20px;
     padding: 10%;
     box-sizing: border-box;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
 }
 .tranche__left{
     width: 4px;
@@ -129,7 +133,8 @@ p{
 
 /* Début containerRight---------------------------- */
 .container1Right{
-    background-color: rgb(220, 218, 218, 0.2);
+    background: linear-gradient(20deg, rgba(11, 118, 11, 0.1), rgba(11, 118, 11, 0.4));
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
     width: 40%;
     padding: 3%;
     border-radius: 20px;
@@ -148,10 +153,8 @@ p{
 }
 /* Début containerLeft---------------------------- */
 .container2Left{
-    width: 55%;
+    width: 50%;
     min-height: 300px;
-    background-color: rgb(220, 218, 218, 0.6);
-    clip-path: polygon(0% 0%, 100% 50%, 100% 100%, 0% 100%);
     display: flex;
     align-items: end;
     justify-content: center;
@@ -160,6 +163,7 @@ p{
 }
 .logo__front__back{
     margin-bottom: 20px;
+    filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.608));
 }
 .fa-html5{
     color: coral;
@@ -175,10 +179,8 @@ p{
 }
 /* Début containerRight---------------------------- */
 .container2Right{
-    width: 55%;
+    width: 50%;
     min-height: 300px;
-    background-color: rgb(220, 218, 218, 0.2);
-    clip-path: polygon(0% 50%, 100% 0%, 100% 100%, 0% 100%);
     display: flex;
     align-items: end;
     justify-content: center;
@@ -188,11 +190,11 @@ p{
 }
 .fa-node-js{
     color: green;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .fa-mdb{
     color: rgb(42, 40, 40);
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 
@@ -214,6 +216,7 @@ p{
     height: 20px;
     width: 100%;
     background-color: rgba(128, 128, 128, 0.1);
+    filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.608));
     border-radius: 20px;
     border: 1px solid gray;
     margin-top: 5px;
@@ -295,7 +298,8 @@ p{
     height: 100%;
     width: 100%;
     backface-visibility: hidden;
-    background-color: rgb(220, 218, 218, 0.2);
+    background: linear-gradient(-20deg, rgba(5, 14, 151, 0.1), rgba(5, 14, 151, 0.4));
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -313,7 +317,8 @@ p{
     width: 100%;
     backface-visibility: hidden;
     transform: rotateY(180deg);
-    background-color: rgb(220, 218, 218, 0.2);
+    background: linear-gradient(-20deg, rgba(5, 14, 151, 0.1), rgba(5, 14, 151, 0.4));
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -321,6 +326,10 @@ p{
     padding: 5%;
     box-sizing: border-box;
     border-radius: 20px;
+}
+.list__projet1{
+    list-style-type: none;
+    display: flex;
 }
 .container4Left:hover{
     transform: rotateY(180deg);
@@ -344,7 +353,8 @@ p{
     height: 100%;
     width: 100%;
     backface-visibility: hidden;
-    background-color: rgb(220, 218, 218, 0.2);
+    background: linear-gradient(-20deg, rgba(5, 14, 151, 0.1), rgba(5, 14, 151, 0.4));
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -362,7 +372,8 @@ p{
     width: 100%;
     backface-visibility: hidden;
     transform: rotateY(180deg);
-    background-color: rgb(220, 218, 218, 0.2);
+    background: linear-gradient(-20deg, rgba(5, 14, 151, 0.1), rgba(5, 14, 151, 0.4));
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -381,8 +392,12 @@ p{
 ===================================================*/
 footer{
     width: 100%;
-    height: 120px;
     display: flex;
     justify-content: space-around;
-    background-color: rgb(220, 218, 218, 0.2);
+
+    
+}
+.fa-footer{
+    padding: 10px;
+    margin-bottom: 20px;
 }
